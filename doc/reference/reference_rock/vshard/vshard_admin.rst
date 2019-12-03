@@ -505,10 +505,10 @@ For example:
         box.schema.func.create('customer_add')
     end)
 
-Every space you plan to shard must have ``bucket_id`` unsigned field indexed
-by ``bucket_id`` TREE index. Spaces without ``bucket_id`` index don't
-participate in a sharded Tarantool cluster and can be used as regular
-spaces if needed.
+.. NOTE::
+
+    Every space you plan to shard must have ``bucket_id`` unsigned field indexed
+    by ``bucket_id`` TREE index.
 
 .. _vshard-adding-data:
 

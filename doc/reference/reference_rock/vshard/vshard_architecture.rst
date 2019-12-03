@@ -76,10 +76,13 @@ multiple replica sets at a time.
 The total number of buckets is determined by the administrator who sets up the
 initial cluster configuration.
 
-Every Tarantool space you plan to shard must have a bucket id field indexed by the
-bucket id index. Spaces without bucket id indexes do not participate in sharding
-but can be used as regular spaces. By default, the name of the index coincides with
-the bucket id.
+Every space you plan to shard must have ``bucket_id`` unsigned field indexed
+by ``bucket_id`` TREE index. Spaces without ``bucket_id`` index don't
+participate in a sharded Tarantool cluster and can be used as regular
+spaces if needed. By default, the name of the index coincides with
+the ``bucket_id``.
+
+See the :ref:`configuration example <vshard-define-spaces>`.
 
 .. _vshard-structure:
 
