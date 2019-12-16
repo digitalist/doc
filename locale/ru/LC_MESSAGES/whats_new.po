@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the Tarantool package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Tarantool 1.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-22 08:12+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-12-16 11:54+0000\n"
+"PO-Revision-Date: 2019-12-03 12:59+0300\n"
+"Last-Translator: \n"
+"Language: new\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +22,6 @@ msgid "Release Notes"
 msgstr "Примечания к версиям"
 
 #: ../doc/whats_new.rst:7
-#, fuzzy
 msgid ""
 "The Release Notes are summaries of significant changes introduced in "
 "Tarantool :ref:`1.10.4 <whats_new_1104>`, :ref:`1.10.3 <whats_new_1103>`,"
@@ -34,13 +33,13 @@ msgid ""
 "<whats_new_166>`."
 msgstr ""
 "Примечания к версиям содержат краткое описание значимых изменений в "
-"следующих версиях Tarantool'а: :ref:`1.10.3 <whats_new_1103>`, "
-":ref:`1.10.2 <whats_new_1102>`, :ref:`1.9.0 <whats_new_190>`, :ref:`1.7.6"
-" <whats_new_176>`, :ref:`1.7.5 <whats_new_175>`, :ref:`1.7.4 "
-"<whats_new_174>`, :ref:`1.7.3 <whats_new_173>`, :ref:`1.7.2 "
-"<whats_new_172>`, :ref:`1.7.1 <whats_new_171>`, :ref:`1.6.9 "
-"<whats_new_169>`, :ref:`1.6.8 <whats_new_168>`, and :ref:`1.6.6 "
-"<whats_new_166>`."
+"следующих версиях Tarantool'а: :ref:`1.10.4 <whats_new_1104>`, "
+":ref:`1.10.3 <whats_new_1103>`, :ref:`1.10.2 <whats_new_1102>`, "
+":ref:`1.9.0 <whats_new_190>`, :ref:`1.7.6 <whats_new_176>`, :ref:`1.7.5 "
+"<whats_new_175>`, :ref:`1.7.4 <whats_new_174>`, :ref:`1.7.3 "
+"<whats_new_173>`, :ref:`1.7.2 <whats_new_172>`, :ref:`1.7.1 "
+"<whats_new_171>`, :ref:`1.6.9 <whats_new_169>`, :ref:`1.6.8 "
+"<whats_new_168>`, and :ref:`1.6.6 <whats_new_166>`."
 
 #: ../doc/whats_new.rst:22
 msgid ""
@@ -58,33 +57,29 @@ msgid "Version 1.10"
 msgstr "Версия 1.10"
 
 #: ../doc/whats_new.rst:34
-#, fuzzy
 msgid "**Release 1.10.4**"
-msgstr "**Версия 1.10.3**"
+msgstr "**Версия 1.10.4**"
 
 #: ../doc/whats_new.rst:36
-#, fuzzy
 msgid "Release type: stable (lts). Release date: 2019-09-26.  Tag: 1-10-4."
-msgstr "Тип версии: стабильная (lts). Дата выхода: 2019-04-01.  Тег: 1-10-3."
+msgstr "Тип версии: стабильная (lts). Дата выхода: 2019-09-26.  Тег: 1-10-4."
 
 #: ../doc/whats_new.rst:38
-#, fuzzy
 msgid "Announcement: https://github.com/tarantool/tarantool/releases/tag/1.10.4."
-msgstr "Сообщение: https://github.com/tarantool/tarantool/releases/tag/1.10.3."
+msgstr "Сообщение: https://github.com/tarantool/tarantool/releases/tag/1.10.4."
 
 #: ../doc/whats_new.rst:40 ../doc/whats_new.rst:242
 msgid "Overview"
-msgstr ""
+msgstr "Общие сведения"
 
 #: ../doc/whats_new.rst:42
-#, fuzzy
 msgid ""
 "1.10.4 is the next :ref:`stable (lts) <release-policy>` release in the "
 "1.10 series. The label 'stable' means we have had systems running in "
 "production without known crashes, bad results or other showstopper bugs "
 "for quite a while now."
 msgstr ""
-"1.10.3 представляет собой очередную :ref:`стабильную (lts) <release-"
+"1.10.4 представляет собой очередную :ref:`стабильную (lts) <release-"
 "policy>` версию в серии 1.10. Пометка \"стабильная\" означает, что "
 "некоторые системы в течение определенного времени успешно отработали в "
 "производственной среде без известных сбоев, ненадежных результатов и "
@@ -92,11 +87,11 @@ msgstr ""
 
 #: ../doc/whats_new.rst:46
 msgid "This release resolves about 50 issues since 1.10.3."
-msgstr ""
+msgstr "Данная версия содержит около 50 исправлений по сравнению с версией 1.10.3."
 
 #: ../doc/whats_new.rst:48 ../doc/whats_new.rst:250
 msgid "Compatibility"
-msgstr ""
+msgstr "Совместимость"
 
 #: ../doc/whats_new.rst:50 ../doc/whats_new.rst:252
 msgid ""
@@ -123,6 +118,12 @@ msgid ""
 " the recent write rate. Upon dump completion, print observed dump rate in"
 " addition to dump size and duration."
 msgstr ""
+"(Движки) Улучшить запись в журнал о событиях начала/окончания процесса "
+"создания дампа. При запуске создания дампа записывается объем памяти, для"
+" которого создается дамп, предполагаемая скорость создания дампа, ETA, а "
+"также последняя скорость записи. По окончании создания дампа записывается"
+" зарегистрированная скорость создания дампа, а также размер дампа и "
+"длительность."
 
 #: ../doc/whats_new.rst:62
 msgid ""
@@ -134,16 +135,21 @@ msgid ""
 "allow us to save some precious CPU cycles for TX. Issue `4257 "
 "<https://github.com/tarantool/tarantool/issues/4257>`_."
 msgstr ""
+"(Движки) Искать ключ в потоке читателя. Если ключ не обнаружен в кэше "
+"кортежа, забираем его из файла забега. В этом случае чтение с диска и "
+"распаковка страницы выполняется потоком читателя, однако поиск ключа на "
+"выбранной странице все еще выполняется потоком TX. Поскольку страницы "
+"являются неизменяемыми, это может сделать поток читателя, что позволит "
+"нам сэкономить ценные циклы ЦП для TX. Проблема `4257 "
+"<https://github.com/tarantool/tarantool/issues/4257>`_."
 
 #: ../doc/whats_new.rst:69
-#, fuzzy
 msgid ""
 "(Core) Improve :ref:`box.stat.net <box_introspection-box_stat>`. Issue "
 "`4150 <https://github.com/tarantool/tarantool/issues/4150>`_."
 msgstr ""
-"(Vinyl) улучшен вывод :ref:`box.info.vinyl() <box_introspection-"
-"box_info>` и ``index:info()``. Проблема `1662 "
-"<https://github.com/tarantool/tarantool/issues/1662>`_."
+"(Ядро) Улучшить :ref:`box.stat.net <box_introspection-box_stat>`. "
+"Проблема `4150 <https://github.com/tarantool/tarantool/issues/4150>`_."
 
 #: ../doc/whats_new.rst:71
 msgid ""
@@ -152,6 +158,11 @@ msgid ""
 "When ``box.info()`` is called, ``idle`` is set to ``current_time`` - "
 "``last_row_time``."
 msgstr ""
+"(Ядро) Добавить простой ``idle`` в статус downstream в ``box.info``. "
+"Когда передается строка, обновляется значение ``last_row_time`` с текущим"
+" временем. Когда идет вызов ``box.info()``, значение ``idle`` задается "
+"как ``current_time`` (текущее время) - ``last_row_time`` (время передачи "
+"последней строки)."
 
 #: ../doc/whats_new.rst:75
 msgid ""
@@ -159,6 +170,9 @@ msgid ""
 "printing to log. Print the header row by row, 16 bytes in a row, and "
 "format output to match ``xxd`` output:"
 msgstr ""
+"(Репликация) Выводить поврежденные данные при ошибке декодирования. "
+"Улучшить запись строк в журнал. Выводить заголовок построчно, 16 байтов в"
+" строке, формат вывода соответствует выводу ``xxd``:"
 
 #: ../doc/whats_new.rst:79
 msgid ""
@@ -168,12 +182,20 @@ msgid ""
 "[001] 2019-04-05 18:22:46.679 [11859] iproto V> 00000010: D8 E2 D6 E2 A3 "
 "02 D6 5A E4 D9 E7 68 A1 53 8D 53"
 msgstr ""
+"[001] 2019-04-05 18:22:46.679 [11859] iproto V> Got a corrupted row:\n"
+"[001] 2019-04-05 18:22:46.679 [11859] iproto V> 00000000: A3 02 D6 5A E4 "
+"D9 E7 68 A1 53 8D 53 60 5F 20 3F\n"
+"[001] 2019-04-05 18:22:46.679 [11859] iproto V> 00000010: D8 E2 D6 E2 A3 "
+"02 D6 5A E4 D9 E7 68 A1 53 8D 53"
 
 #: ../doc/whats_new.rst:85
 msgid ""
 "(Lua) Add type of operation to space :ref:`trigger parameters <box_space-"
 "on_replace>`. For example, a trigger function may now look like this:"
 msgstr ""
+"(Lua) Добавить тип операций в :ref:`параметры триггера <box_space-"
+"on_replace>`. Например, теперь функция с триггером может выглядеть "
+"следующим образом:"
 
 #: ../doc/whats_new.rst:88
 msgid ""
@@ -185,13 +207,17 @@ msgid ""
 "    end\n"
 "end"
 msgstr ""
+"function before_replace_trig(old, new, space_name, op_type)\n"
+"    if op_type == 'INSERT' then\n"
+"        return old\n"
+"    else\n"
+"        return new\n"
+"    end\n"
+"end"
 
 #: ../doc/whats_new.rst:98
-#, fuzzy
 msgid "Issue `4099 <https://github.com/tarantool/tarantool/issues/4099>`_."
-msgstr ""
-"``luaT_state`` (проблема `2416 "
-"<https://github.com/tarantool/tarantool/issues/2416>`_)"
+msgstr "Проблема `4099 <https://github.com/tarantool/tarantool/issues/4099>`_."
 
 #: ../doc/whats_new.rst:99
 msgid ""
@@ -200,6 +226,10 @@ msgid ""
 "location of a current Lua source file. Part of issue `4193 "
 "<https://github.com/tarantool/tarantool/issues/4193>`_."
 msgstr ""
+"(Lua) Добавить ``debug.sourcefile()`` и ``debug.sourcedir()`` (а также "
+"ускоренные методы ``debug.__file__`` и ``debug.__dir__``) для обнаружения"
+" местонахождения текущего исходного файла на Lua. Часть проблемы `4193 "
+"<https://github.com/tarantool/tarantool/issues/4193>`_."
 
 #: ../doc/whats_new.rst:103
 msgid ""
@@ -210,306 +240,304 @@ msgid ""
 "threshold according to easy handles count. Issue `3945 "
 "<https://github.com/tarantool/tarantool/issues/3945>`_."
 msgstr ""
+"(HTTP-клиент) Добавить опцию ``max_total_connections`` в дополнение к "
+"``max_connections``, чтобы позволить более тонкую настройку кэша "
+"соединения ``libcurl``. Не ограничивать общее число соединений с помощью "
+"постоянного значения по умолчанию, а использовать значение по умолчанию "
+"из``libcurl``, что масштабирует предел в зависимости от количества "
+"обработчиков. Проблема `3945 "
+"<https://github.com/tarantool/tarantool/issues/3945>`_."
 
 #: ../doc/whats_new.rst:110 ../doc/whats_new.rst:276
 msgid "Bugs fixed"
 msgstr "Исправленные ошибки"
 
 #: ../doc/whats_new.rst:112
-#, fuzzy
 msgid ""
 "(Vinyl) Fix assertion failure in `vy_tx_handle_deferred_delete`. Issue "
 "`4294 <https://github.com/tarantool/tarantool/issues/4294>`_."
 msgstr ""
-"(Сервер) Утверждение после неправильного создания индекса. Проблема `3744"
-" <https://github.com/tarantool/tarantool/issues/3744>`_."
+"(Vinyl) Исправить отказ в `vy_tx_handle_deferred_delete`. Проблема `4294 "
+"<https://github.com/tarantool/tarantool/issues/4294>`_."
 
 #: ../doc/whats_new.rst:114
-#, fuzzy
 msgid ""
 "(Vinyl) Don't purge deleted runs from vylog on compaction. Cherry-picked "
 "from issue `4218 <https://github.com/tarantool/tarantool/issues/4218>`_."
 msgstr ""
-"(Lua) Проверка наличия открытой транзакции. Проблема `3518 "
-"<https://github.com/tarantool/tarantool/issues/3518>`_."
+"(Vinyl) Не очищать удаленные забеги из vylog при слиянии. Отдельные "
+"элементы из проблемы `4218 "
+"<https://github.com/tarantool/tarantool/issues/4218>`_."
 
 #: ../doc/whats_new.rst:116
-#, fuzzy
 msgid ""
 "(Vinyl) Don't throttle DDL. Issue `4238 "
 "<https://github.com/tarantool/tarantool/issues/4238>`_."
 msgstr ""
-"(Сервер) SIGHUP вызывает завершение работы Tarantool'а. Проблема `4063 "
-"<https://github.com/tarantool/tarantool/issues/4063>`_."
+"(Vinyl) Не управлять загрузкой DDL. Проблема `4238 "
+"<https://github.com/tarantool/tarantool/issues/4238>`_."
 
 #: ../doc/whats_new.rst:118
-#, fuzzy
 msgid ""
 "(Vinyl) Fix deferred DELETE statement lost on commit. Issue `4248 "
 "<https://github.com/tarantool/tarantool/issues/4248>`_."
 msgstr ""
-"(Vinyl) появились постоянные вторичные ключи. Проблема `2410 "
-"<https://github.com/tarantool/tarantool/issues/2410>`_."
+"(Vinyl) Исправить потерю при коммите отложенных предложений DELETE. "
+"Проблема `4248 <https://github.com/tarantool/tarantool/issues/4248>`_."
 
 #: ../doc/whats_new.rst:120
-#, fuzzy
 msgid ""
 "(Vinyl) Fix assertion while recovering dumped statement. Issue `4222 "
 "<https://github.com/tarantool/tarantool/issues/4222>`_."
 msgstr ""
-"(Разное) Журнал переполняется предупреждениями. Проблема `2218 "
-"<https://github.com/tarantool/tarantool/issues/2218>`_."
+"(Vinyl) Исправить допустимость неопределенного значения при "
+"восстановлении предложения из дампа. Проблема `4222 "
+"<https://github.com/tarantool/tarantool/issues/4222>`_."
 
 #: ../doc/whats_new.rst:122
-#, fuzzy
 msgid ""
 "(Vinyl) Reset dump watermark after updating memory limit. Issue `3864 "
 "<https://github.com/tarantool/tarantool/issues/3864>`_."
 msgstr ""
-"(Сборки) Поддержка Alpine Linux. Проблема `3067 "
-"<https://github.com/tarantool/tarantool/issues/3067>`_."
+"(Vinyl) Сбросить уровень дампа после обновления предела загрузки памяти. "
+"Проблема `3864 <https://github.com/tarantool/tarantool/issues/3864>`_."
 
 #: ../doc/whats_new.rst:124
-#, fuzzy
 msgid ""
 "(Vinyl) Be pessimistic about write rate when setting dump watermark. "
 "Issue `4166 <https://github.com/tarantool/tarantool/issues/4166>`_."
 msgstr ""
-"(Vinyl) появились постоянные вторичные ключи. Проблема `2410 "
-"<https://github.com/tarantool/tarantool/issues/2410>`_."
+"(Vinyl) Неудовлетворительная скорость записи при установленном уровне "
+"дампа. Проблема `4166 "
+"<https://github.com/tarantool/tarantool/issues/4166>`_."
 
 #: ../doc/whats_new.rst:126
-#, fuzzy
 msgid ""
 "(Vinyl) Fix crash if space is dropped while space.get is reading from it."
 " Issue `4109 <https://github.com/tarantool/tarantool/issues/4109>`_."
 msgstr ""
-"(Движки) Сбой итератора vinyl'а при использовании DDL. Проблема `4000 "
-"<https://github.com/tarantool/tarantool/issues/4000>`_."
+"(Vinyl) Исправить сбой при удалении спейса во время чтения из него через "
+"space.get. Проблема `4109 "
+"<https://github.com/tarantool/tarantool/issues/4109>`_."
 
 #: ../doc/whats_new.rst:128
-#, fuzzy
 msgid ""
 "(Vinyl) Fix crash during index build. Issue `4152 "
 "<https://github.com/tarantool/tarantool/issues/4152>`_."
 msgstr ""
-"(Vinyl) появились постоянные вторичные ключи. Проблема `2410 "
-"<https://github.com/tarantool/tarantool/issues/2410>`_."
+"(Vinyl) Исправить сбой во время создания индекса. Проблема `4152 "
+"<https://github.com/tarantool/tarantool/issues/4152>`_."
 
 #: ../doc/whats_new.rst:130
-#, fuzzy
 msgid ""
 "(Vinyl) Don't compress L1 runs. Issue `2389 "
 "<https://github.com/tarantool/tarantool/issues/2389>`_."
 msgstr ""
-"(Разное) 'http.client' выдает неправильную (?) причину. Проблема `3681 "
-"<https://github.com/tarantool/tarantool/issues/3681>`_."
+"(Vinyl) Не сжимать забеги L1. Проблема `2389 "
+"<https://github.com/tarantool/tarantool/issues/2389>`_."
 
 #: ../doc/whats_new.rst:132
 msgid "(Vinyl) Account statements skipped on read."
-msgstr ""
+msgstr "(Vinyl) Считать операторы, пропущенные при чтении."
 
 #: ../doc/whats_new.rst:133
 msgid "(Vinyl) Take into account primary key lookup in latency accounting."
-msgstr ""
+msgstr "(Vinyl) Принять во внимание поиск первичного ключа при учете задержек."
 
 #: ../doc/whats_new.rst:134
 msgid "(Vinyl) Fix ``vy_range_update_compaction_priority`` hang."
-msgstr ""
+msgstr "(Vinyl) Исправить зависание ``vy_range_update_compaction_priority``."
 
 #: ../doc/whats_new.rst:135
 msgid ""
 "(Vinyl) Free region on vylog commit instead of resetting it and clean up "
 "region after allocating surrogate statement."
 msgstr ""
+"(Vinyl) Освобождать область при фиксации vylog вместо сброса и очищать "
+"после выделения заместителя оператора."
 
 #: ../doc/whats_new.rst:137
 msgid "(Vinyl) Increase even more the open file limit in ``systemd`` unit file."
 msgstr ""
+"(Vinyl) Еще увеличить ограничение на количество открытых файлов в файле "
+"``systemd``."
 
 #: ../doc/whats_new.rst:138
 msgid "(Vinyl) Increment min range size to 128MB"
-msgstr ""
+msgstr "(Vinyl) Увеличить минимальный размер диапазона до 128 Мбайт"
 
 #: ../doc/whats_new.rst:139
-#, fuzzy
 msgid ""
 "(Memtx) Cancel checkpoint thread at exit. Issue `4170 "
 "<https://github.com/tarantool/tarantool/issues/4170>`_."
 msgstr ""
-"(Vinyl) появились постоянные вторичные ключи. Проблема `2410 "
-"<https://github.com/tarantool/tarantool/issues/2410>`_."
+"(Memtx) Отменить поток создания контрольных точек на выходе. Проблема "
+"`4170 <https://github.com/tarantool/tarantool/issues/4170>`_."
 
 #: ../doc/whats_new.rst:141
-#, fuzzy
 msgid ""
 "(Core) Fix crash for update with empty tuple. Issue `4041 "
 "<https://github.com/tarantool/tarantool/issues/4041>`_."
 msgstr ""
-"(Разное) Пустое сообщение объекта ошибки. Проблема `3604 "
-"<https://github.com/tarantool/tarantool/issues/3604>`_."
+"(Ядро) Исправить отказ для обновления с пустым кортежем. Проблема `4041 "
+"<https://github.com/tarantool/tarantool/issues/4041>`_."
 
 #: ../doc/whats_new.rst:143
-#, fuzzy
 msgid ""
 "(Core) Fix use-after-free in ``space_truncate``. Issue `4093 "
 "<https://github.com/tarantool/tarantool/issues/4093>`_."
 msgstr ""
-"(Lua) Использование динамической памяти в lbox_error. Проблема `1955 "
-"<https://github.com/tarantool/tarantool/issues/1955>`_."
+"(Ядро) Исправить использование освобожденной памяти в ``space_truncate``."
+" Проблема `4093 <https://github.com/tarantool/tarantool/issues/4093>`_."
 
 #: ../doc/whats_new.rst:145
-#, fuzzy
 msgid ""
 "(Core) Fix error while altering index with sequence. Issue `4214 "
 "<https://github.com/tarantool/tarantool/issues/4214>`_."
 msgstr ""
-"(Разное) Журнал переполняется предупреждениями. Проблема `2218 "
-"<https://github.com/tarantool/tarantool/issues/2218>`_."
+"(Ядро) Исправить ошибку при изменении индекса с последовательностью. "
+"Проблема `4214 <https://github.com/tarantool/tarantool/issues/4214>`_."
 
 #: ../doc/whats_new.rst:147
-#, fuzzy
 msgid ""
 "(Core) Detect a new invalid json path case. Issue `4419 "
 "<https://github.com/tarantool/tarantool/issues/4419>`_."
 msgstr ""
-"(Разное) Сборка Mac завершается с ошибкой в Mojave. Проблема `3797 "
-"<https://github.com/tarantool/tarantool/issues/3797>`_."
+"(Ядро) Выявить новый случай неправильного json-пути. Проблема `4419 "
+"<https://github.com/tarantool/tarantool/issues/4419>`_."
 
 #: ../doc/whats_new.rst:149
-#, fuzzy
 msgid ""
 "(Core) Fix empty password authentication. Issue `4327 "
 "<https://github.com/tarantool/tarantool/issues/4327>`_."
 msgstr ""
-"Запись конфликтов в ключах в журнал в рамках репликации мастер-мастер. "
-"Проблема `2779 <https://github.com/tarantool/tarantool/issues/2779>`_."
+"(Ядро) Исправить аутентификацию с пустым паролем. Проблема `4327 "
+"<https://github.com/tarantool/tarantool/issues/4327>`_."
 
 #: ../doc/whats_new.rst:151
 msgid "(Core) Fix ``txn::sub_stmt_begin`` array size."
-msgstr ""
+msgstr "(Ядро) Исправить размер массива ``txn::sub_stmt_begin``."
 
 #: ../doc/whats_new.rst:152
 msgid "(Core) Account ``index.pairs`` in ``box.stat.SELECT()``."
-msgstr ""
+msgstr "(Ядро) Учитывать ``index.pairs`` в ``box.stat.SELECT()``."
 
 #: ../doc/whats_new.rst:153
-#, fuzzy
 msgid ""
 "(Replication) Disallow bootstrap of read-only masters. Issue `4321 "
 "<https://github.com/tarantool/tarantool/issues/4321>`_."
 msgstr ""
-"(Репликация) Потворная настройка не производится, если на мастере есть "
-"строки из реплики. Проблема `3740 "
-"<https://github.com/tarantool/tarantool/issues/3740>`_."
+"(Репликация) Запретить настройку мастеров только для чтения. Проблема "
+"`4321 <https://github.com/tarantool/tarantool/issues/4321>`_."
 
 #: ../doc/whats_new.rst:155
-#, fuzzy
 msgid ""
 "(Replication) Enter orphan mode on manual replication configuration "
 "change. Issue `4424 "
 "<https://github.com/tarantool/tarantool/issues/4424>`_."
 msgstr ""
-"(Репликация) Ошибка во время репликации. Проблема `3910 "
-"<https://github.com/tarantool/tarantool/issues/3910>`_."
+"(Репликация) Входить в режим одиночного сервера при ручном изменении "
+"настройки репликации. Проблема `4424 "
+"<https://github.com/tarantool/tarantool/issues/4424>`_."
 
 #: ../doc/whats_new.rst:157
-#, fuzzy
 msgid ""
 "(Replication) Set ``last_row_time`` to ``now`` in ``relay_new`` and "
 "``relay_start``. PR `4431 "
 "<https://github.com/tarantool/tarantool/pull/4431>`_."
 msgstr ""
-"(Репликация) Отчет о состоянии присоединения в журнале реплики. Проблема "
-"`3165 <https://github.com/tarantool/tarantool/issues/3165>`_."
+"(Репликация) Задать значение ``now`` для ``last_row_time`` в "
+"``relay_new`` и ``relay_start``. Проблема `4431 "
+"<https://github.com/tarantool/tarantool/pull/4431>`_."
 
 #: ../doc/whats_new.rst:159
-#, fuzzy
 msgid ""
 "(Replication) Stop relay on subscribe error. Issue `4399 "
 "<https://github.com/tarantool/tarantool/issues/4399>`_."
 msgstr ""
-"(Репликации) Сбой присоединения реплики Vinyl. Проблема `3968 "
-"<https://github.com/tarantool/tarantool/issues/3968>`_."
+"(Репликация) Остановить передачу данных при ошибке подписки. Проблема "
+"`4399 <https://github.com/tarantool/tarantool/issues/4399>`_."
 
 #: ../doc/whats_new.rst:161
-#, fuzzy
 msgid ""
 "(Replication) Init ``coio`` watcher before join/subscribe. Issue `4110 "
 "<https://github.com/tarantool/tarantool/issues/4110>`_."
 msgstr ""
-"(Репликация) Ошибка во время репликации. Проблема `3910 "
-"<https://github.com/tarantool/tarantool/issues/3910>`_."
+"(Репликация) Запустить средство отслеживания ``coio`` перед подпиской "
+"join/subscribe. Проблема `4110 "
+"<https://github.com/tarantool/tarantool/issues/4110>`_."
 
 #: ../doc/whats_new.rst:163
-#, fuzzy
 msgid ""
 "(Replication) Allow to change instance id during join. Issue `4107 "
 "<https://github.com/tarantool/tarantool/issues/4107>`_."
 msgstr ""
-"(Репликация) Ошибка во время репликации. Проблема `3910 "
-"<https://github.com/tarantool/tarantool/issues/3910>`_."
+"(Репликация) Разрешить изменение идентификатора экземпляра во время "
+"присоединения. Проблема `4107 "
+"<https://github.com/tarantool/tarantool/issues/4107>`_."
 
 #: ../doc/whats_new.rst:165
 msgid "(Replication) Fix garbage collection logic."
-msgstr ""
+msgstr "(Репликация) Исправить логику сборки мусора."
 
 #: ../doc/whats_new.rst:166
 msgid "(Replication) Revert packet boundary checking for iproto."
-msgstr ""
+msgstr "(Репликация) Вернуть проверку границ пакета для iproto."
 
 #: ../doc/whats_new.rst:167
 msgid "(Replication) Do not abort replication on ER_UNKNOWN_REPLICA."
-msgstr ""
+msgstr "(Репликация) Не прерывать репликацию при ER_UNKNOWN_REPLICA."
 
 #: ../doc/whats_new.rst:168
 msgid ""
 "(Replication) Reduce effects of input buffer fragmentation on large "
 "``cfg.readahead``."
 msgstr ""
+"(Репликация) Уменьшать воздействие фрагментации буфера ввода при большом "
+"``cfg.readahead``."
 
 #: ../doc/whats_new.rst:169
 msgid ""
 "(Replication) Fix upgrade from 1.7 (it doesn't recognize IPROTO_VOTE "
 "request type)."
 msgstr ""
+"(Репликация) Исправить обновление с 1.7 (не распознает тип запроса "
+"IPROTO_VOTE)."
 
 #: ../doc/whats_new.rst:170
-#, fuzzy
 msgid ""
 "(Replication) Fix memory leak in call / eval in the case when a "
 "transaction is not committed. Issue `4388 "
 "<https://github.com/tarantool/tarantool/issues/4388>`_."
 msgstr ""
-"(Репликации) запись в журнал попытки повторного коммита. Проблема `3105 "
-"<https://github.com/tarantool/tarantool/issues/3105>`_."
+"(Репликация) Исправить утечку памяти в call / eval в случае отсутствия "
+"коммита транзакции. Проблема `4388 "
+"<https://github.com/tarantool/tarantool/issues/4388>`_."
 
 #: ../doc/whats_new.rst:173
-#, fuzzy
 msgid ""
 "(Lua) Fix ``fio.mktree()`` error reporting. Issue `4044 "
 "<https://github.com/tarantool/tarantool/issues/4044>`_."
 msgstr ""
-"(Репликация) Ошибка во время репликации. Проблема `3910 "
-"<https://github.com/tarantool/tarantool/issues/3910>`_."
+"(Lua) Исправить регистрацию ошибок ``fio.mktree()``. Проблема `4044 "
+"<https://github.com/tarantool/tarantool/issues/4044>`_."
 
 #: ../doc/whats_new.rst:175
-#, fuzzy
 msgid ""
 "(Lua) Fix segfault on ``ffi.C_say()`` without filename. Issue `4336 "
 "<https://github.com/tarantool/tarantool/issues/4336>`_."
 msgstr ""
-"``luaT_state`` (проблема `2416 "
-"<https://github.com/tarantool/tarantool/issues/2416>`_)"
+"(Lua) Исправить ошибку сегментации в ``ffi.C_say()`` без имени файла. "
+"Проблема `4336 <https://github.com/tarantool/tarantool/issues/4336>`_."
 
 #: ../doc/whats_new.rst:177
-#, fuzzy
 msgid ""
 "(Lua) Fix segfault on ``json.encode()`` on a recursive table. Issue `4366"
 " <https://github.com/tarantool/tarantool/issues/4366>`_."
 msgstr ""
-"(Разное) yaml.encode неправильно кодирует 'null'. Проблема `3583 "
-"<https://github.com/tarantool/tarantool/issues/3583>`_."
+"(Lua) Исправить ошибку сегментации в ``json.encode()`` на рекурсивную "
+"таблицу. Проблема `4366 "
+"<https://github.com/tarantool/tarantool/issues/4366>`_."
 
 #: ../doc/whats_new.rst:179
 msgid ""
@@ -518,35 +546,38 @@ msgid ""
 "<https://github.com/tarantool/tarantool/issues/4447>`_, `4428 "
 "<https://github.com/tarantool/tarantool/issues/4428>`_."
 msgstr ""
+"(Lua) Исправить зависание ``pwd.getpwall()`` и ``pwd.getgrall()`` на "
+"CentOS 6 и FreeBSD 12. Проблемы `4447 "
+"<https://github.com/tarantool/tarantool/issues/4447>`_, `4428 "
+"<https://github.com/tarantool/tarantool/issues/4428>`_."
 
 #: ../doc/whats_new.rst:183
-#, fuzzy
 msgid ""
 "(Lua) Fix a segfault during initialization of a cipher from ``crypto`` "
 "module. Issue `4223 "
 "<https://github.com/tarantool/tarantool/issues/4223>`_."
 msgstr ""
-"(Lua) Проверка наличия открытой транзакции. Проблема `3518 "
-"<https://github.com/tarantool/tarantool/issues/3518>`_."
+"(Lua) Исправить ошибку сегментации во время инициализации cipher from "
+"``crypto`` module. Проблема `4223 "
+"<https://github.com/tarantool/tarantool/issues/4223>`_."
 
 #: ../doc/whats_new.rst:185
-#, fuzzy
 msgid ""
 "(HTTP client) Reduce stack consumption during waiting for a DNS resolving"
 " result. Issue `4179 "
 "<https://github.com/tarantool/tarantool/issues/4179>`_."
 msgstr ""
-"(Репликация) Ошибка во время репликации. Проблема `3910 "
-"<https://github.com/tarantool/tarantool/issues/3910>`_."
+"(HTTP-клиент) Уменьшить потребление стека во время ожидания результата "
+"определения DNS. Проблема `4179 "
+"<https://github.com/tarantool/tarantool/issues/4179>`_."
 
 #: ../doc/whats_new.rst:187
-#, fuzzy
 msgid ""
 "(HTTP client) Increase max outgoing header size to 8 KiB. Issue `3959 "
 "<https://github.com/tarantool/tarantool/issues/3959>`_."
 msgstr ""
-"(Репликации) Сбой присоединения реплики Vinyl. Проблема `3968 "
-"<https://github.com/tarantool/tarantool/issues/3968>`_."
+"(HTTP-клиент) Увеличить максимальный размер заголовка до 8 КиБ. Проблема "
+"`3959 <https://github.com/tarantool/tarantool/issues/3959>`_."
 
 #: ../doc/whats_new.rst:189
 msgid ""
@@ -554,6 +585,9 @@ msgid ""
 "<https://github.com/tarantool/tarantool/issues/4281>`_, `3679 "
 "<https://github.com/tarantool/tarantool/issues/3679>`_."
 msgstr ""
+"(HTTP-клиент) Сильнее проверять опцию \"headers\". Проблемы `4281 "
+"<https://github.com/tarantool/tarantool/issues/4281>`_, `3679 "
+"<https://github.com/tarantool/tarantool/issues/3679>`_."
 
 #: ../doc/whats_new.rst:192
 msgid ""
@@ -564,6 +598,13 @@ msgid ""
 "<https://github.com/tarantool/tarantool/issues/4389>`_, `4397 "
 "<https://github.com/tarantool/tarantool/issues/4397>`_."
 msgstr ""
+"(HTTP-клиент) Использовать ``libcurl`` в комплекте, а не системный по "
+"умолчанию. Проблемы `4318 "
+"<https://github.com/tarantool/tarantool/issues/4318>`_, `4180 "
+"<https://github.com/tarantool/tarantool/issues/4180>`_, `4288 "
+"<https://github.com/tarantool/tarantool/issues/4288>`_, `4389 "
+"<https://github.com/tarantool/tarantool/issues/4389>`_, `4397 "
+"<https://github.com/tarantool/tarantool/issues/4397>`_."
 
 #: ../doc/whats_new.rst:198
 msgid ""
@@ -571,133 +612,129 @@ msgid ""
 "recent ``libcurl`` versions, including segfaults, hangs, memory leaks and"
 " performance problems."
 msgstr ""
+"(HTTP-клиент) Закрывает несколько известных проблем, которые были "
+"исправлены в последних версиях ``libcurl``, включая ошибки сегментации, "
+"зависания, утечки памяти и проблемы производительности."
 
 #: ../doc/whats_new.rst:201
-#, fuzzy
 msgid ""
 "(LuaJIT) Fix overflow of snapshot map offset. Part of issue `4171 "
 "<https://github.com/tarantool/tarantool/issues/4171>`_."
 msgstr ""
-"(Сервер) fiber:name() показывает только часть имени. Проблема `4011 "
-"<https://github.com/tarantool/tarantool/issues/4011>`_."
+"(LuaJIT) Исправить переполнение массива снимка. Часть проблемы `4171 "
+"<https://github.com/tarantool/tarantool/issues/4171>`_."
 
 #: ../doc/whats_new.rst:203
-#, fuzzy
 msgid ""
 "(LuaJIT) Fix rechaining of pseudo-resurrected string keys. Part of issue "
 "`4171 <https://github.com/tarantool/tarantool/issues/4171>`_."
 msgstr ""
-"(Сервер) fiber:name() показывает только часть имени. Проблема `4011 "
-"<https://github.com/tarantool/tarantool/issues/4011>`_."
+"(LuaJIT) Исправить повторное сцепление псевдо-восстановленных строковых "
+"ключей. Часть проблемы `4171 "
+"<https://github.com/tarantool/tarantool/issues/4171>`_."
 
 #: ../doc/whats_new.rst:205
-#, fuzzy
 msgid ""
 "(LuaJIT) Fix fold machinery misbehaves. Issue `4376 "
 "<https://github.com/tarantool/tarantool/issues/4376>`_."
 msgstr ""
-"(Разное) Сборка Mac завершается с ошибкой в Mojave. Проблема `3797 "
-"<https://github.com/tarantool/tarantool/issues/3797>`_."
+"(LuaJIT) Исправить ошибки алгоритма свертывания. Проблема `4376 "
+"<https://github.com/tarantool/tarantool/issues/4376>`_."
 
 #: ../doc/whats_new.rst:207
-#, fuzzy
 msgid ""
 "(LuaJIT) Fix for `debug.getinfo(1,'>S')`. Issue `3833 "
 "<https://github.com/tarantool/tarantool/issues/3833>`_."
 msgstr ""
-"(Разное) yaml.encode неправильно кодирует 'null'. Проблема `3583 "
-"<https://github.com/tarantool/tarantool/issues/3583>`_."
+"(LuaJIT) Исправить `debug.getinfo(1,'>S')`. Проблема `3833 "
+"<https://github.com/tarantool/tarantool/issues/3833>`_."
 
 #: ../doc/whats_new.rst:209
-#, fuzzy
 msgid ""
 "(LuaJIT) Fix `string.find` recording. Issue `4476 "
 "<https://github.com/tarantool/tarantool/issues/4476>`_."
 msgstr ""
-"``luaT_state`` (проблема `2416 "
-"<https://github.com/tarantool/tarantool/issues/2416>`_)"
+"(LuaJIT) Исправить записи `string.find`. Проблема `4476 "
+"<https://github.com/tarantool/tarantool/issues/4476>`_."
 
 #: ../doc/whats_new.rst:211
 msgid "(LuaJIT) Fixed a segfault when unsinking 64-bit pointers."
-msgstr ""
+msgstr "(LuaJIT) Исправлена ошибка нетонущих 64-битных указателей."
 
 #: ../doc/whats_new.rst:212
 msgid "(Misc) Increase even more the open file limit in ``systemd`` unit file."
 msgstr ""
+"(Разное) Еще увеличить предел количества открытых файлов в файле "
+"``systemd``."
 
 #: ../doc/whats_new.rst:213
-#, fuzzy
 msgid ""
 "(Misc) Raise error in ``tarantoolctl`` when ``box.cfg()`` isn't called. "
 "Issue `3953 <https://github.com/tarantool/tarantool/issues/3953>`_."
 msgstr ""
-"(Lua) Проверка наличия открытой транзакции. Проблема `3518 "
-"<https://github.com/tarantool/tarantool/issues/3518>`_."
+"(Разное) Выдавать ошибку в ``tarantoolctl`` при отсутствии вызова "
+"``box.cfg()``. Проблема `3953 "
+"<https://github.com/tarantool/tarantool/issues/3953>`_."
 
 #: ../doc/whats_new.rst:215
-#, fuzzy
 msgid ""
 "(Misc) Support ``systemd``’s NOTIFY_SOCKET on OS X. Issue `4436 "
 "<https://github.com/tarantool/tarantool/issues/4436>`_."
 msgstr ""
-"(Сборки) Поддержка Alpine Linux. Проблема `3067 "
-"<https://github.com/tarantool/tarantool/issues/3067>`_."
+"(Разное) Поддерживать NOTIFY_SOCKET из ``systemd`` на OS X. Проблема "
+"`4436 <https://github.com/tarantool/tarantool/issues/4436>`_."
 
 #: ../doc/whats_new.rst:217
-#, fuzzy
 msgid ""
 "(Misc) Fix ``coio_getaddrinfo()`` when 0 timeout is passed (affects "
 "``netbox``’s ``connect_timeout``). Issue `4209 "
 "<https://github.com/tarantool/tarantool/issues/4209>`_."
 msgstr ""
-"net.box: добавлена опция ``connect_timeout``. Проблема `2054 "
-"<https://github.com/tarantool/tarantool/issues/2054>`_."
+"(Разное) Исправить ``coio_getaddrinfo()`` при передаче времени ожидания 0"
+" (влияет на ``connect_timeout`` в ``netbox``). Проблема `4209 "
+"<https://github.com/tarantool/tarantool/issues/4209>`_."
 
 #: ../doc/whats_new.rst:220
-#, fuzzy
 msgid ""
 "(Misc) Fix ``coio_do_copyfile()`` to perform truncate of destination "
 "(affects ``fio.copyfile()``). Issue `4181 "
 "<https://github.com/tarantool/tarantool/issues/4181>`_."
 msgstr ""
-"(Сервер) :ref:`настройка места назначения syslog <cfg_logging-log>`. "
-"Проблема `3487 <https://github.com/tarantool/tarantool/issues/3487>`_."
+"(Разное) Исправить ``coio_do_copyfile()`` для выполнения усечения места "
+"назначения (влияет на ``fio.copyfile()``). Проблема `4181 "
+"<https://github.com/tarantool/tarantool/issues/4181>`_."
 
 #: ../doc/whats_new.rst:223
 msgid "(Misc) Make hints in ``coio_getaddrinfo()`` optional."
-msgstr ""
+msgstr "(Разное) Сделать подсказки в ``coio_getaddrinfo()`` необязательными."
 
 #: ../doc/whats_new.rst:224
-#, fuzzy
 msgid ""
 "(Misc) Validate ``msgpack.decode()`` cdata size argument. Issue `4224 "
 "<https://github.com/tarantool/tarantool/issues/4224>`_."
 msgstr ""
-"(Разное) Журнал переполняется предупреждениями. Проблема `2218 "
-"<https://github.com/tarantool/tarantool/issues/2218>`_."
+"(Разное) Проверять аргумент размера ``msgpack.decode()``. Проблема `4224 "
+"<https://github.com/tarantool/tarantool/issues/4224>`_."
 
 #: ../doc/whats_new.rst:226
-#, fuzzy
 msgid ""
 "(Misc) Fix linking with static ``openssl`` library. Issue `4437 "
 "<https://github.com/tarantool/tarantool/issues/4437>`_."
 msgstr ""
-"(Сборки) Поддержка Alpine Linux. Проблема `3067 "
-"<https://github.com/tarantool/tarantool/issues/3067>`_."
+"(Разное) Исправить привязку к статической библиотеке ``openssl``. "
+"Проблема `4437 <https://github.com/tarantool/tarantool/issues/4437>`_."
 
 #: ../doc/whats_new.rst:229 ../doc/whats_new.rst:373
 msgid "Deprecations"
-msgstr ""
+msgstr "Устаревшие функции"
 
 #: ../doc/whats_new.rst:231
-#, fuzzy
 msgid ""
 "(Core) Deprecate ``rows_per_wal`` in favor of ``wal_max_size``. Part of "
 "issue `3762 <https://github.com/tarantool/tarantool/issues/3762>`_."
 msgstr ""
-"(Разное) yaml.encode использует многострочный формат для 'false' и "
-"'true'. Проблема `3662 "
-"<https://github.com/tarantool/tarantool/issues/3662>`_."
+"(Ядро) ``wal_max_size`` заменяет устаревший ``rows_per_wal``. Часть "
+"проблемы `3762 <https://github.com/tarantool/tarantool/issues/3762>`_."
 
 #: ../doc/whats_new.rst:236
 msgid "**Release 1.10.3**"
@@ -726,7 +763,7 @@ msgstr ""
 
 #: ../doc/whats_new.rst:248
 msgid "This release resolves 69 issues since 1.10.2."
-msgstr ""
+msgstr "Данная версия содержит 69 исправлений по сравнению с версией 1.10.2."
 
 #: ../doc/whats_new.rst:257
 msgid ""
@@ -1009,7 +1046,7 @@ msgid ""
 "(Replication) Vinyl replica join fails Issue `3968 "
 "<https://github.com/tarantool/tarantool/issues/3968>`_."
 msgstr ""
-"(Репликации) Сбой присоединения реплики Vinyl. Проблема `3968 "
+"(Репликация) Сбой присоединения реплики Vinyl. Проблема `3968 "
 "<https://github.com/tarantool/tarantool/issues/3968>`_."
 
 #: ../doc/whats_new.rst:328
@@ -1043,7 +1080,7 @@ msgid ""
 "(Replication) Rebootstrap crashes if master has replica's rows Issue "
 "`3740 <https://github.com/tarantool/tarantool/issues/3740>`_."
 msgstr ""
-"(Репликация) Потворная настройка не производится, если на мастере есть "
+"(Репликация) Повторная настройка не производится, если на мастере есть "
 "строки из реплики. Проблема `3740 "
 "<https://github.com/tarantool/tarantool/issues/3740>`_."
 
@@ -1062,7 +1099,7 @@ msgid ""
 "(Replication) Add vclock for safer hot standby switch Issue `3002 "
 "<https://github.com/tarantool/tarantool/issues/3002>`_."
 msgstr ""
-"(Репликации) Добавление vclock для более безопасного переключения в режим"
+"(Репликация) Добавление vclock для более безопасного переключения в режим"
 " горячего резервирования hot standby. Проблема `3002 "
 "<https://github.com/tarantool/tarantool/issues/3002>`_."
 
@@ -1071,7 +1108,7 @@ msgid ""
 "(Replication) Master row is skipped forever in case of wal write failure "
 "Issue `2283 <https://github.com/tarantool/tarantool/issues/2283>`_."
 msgstr ""
-"(Репликации) Строка из мастера исчезает при сбое записи в журнал "
+"(Репликация) Строка из мастера исчезает при сбое записи в журнал "
 "упреждающей записи. Проблема `2283 "
 "<https://github.com/tarantool/tarantool/issues/2283>`_."
 
@@ -1205,11 +1242,10 @@ msgstr ""
 "<https://github.com/tarantool/tarantool/issues/2218>`_."
 
 #: ../doc/whats_new.rst:375
-#, fuzzy
 msgid "Deprecate ``console=true`` option for :ref:`net.box.new() <net_box-new>`."
 msgstr ""
-"Устаревшие функции: опция console=true для :ref:`net.box.new <net_box-"
-"new>` объявлена устаревшей."
+"Опция ``console=true`` для :ref:`net.box.new() <net_box-new>` объявлена "
+"устаревшей."
 
 #: ../doc/whats_new.rst:379
 msgid "**Release 1.10.2**"
@@ -1316,14 +1352,15 @@ msgstr ""
 "<https://github.com/tarantool/tarantool/issues/3430>`_."
 
 #: ../doc/whats_new.rst:414
+#, fuzzy
 msgid ""
-"(Server) allow to :ref:`back up any checkpoint <admin-backups-"
+"(Server) allow to :ref:`back up any checkpoint <reference_lua-box_backup-"
 "backup_start>`, not just the last one. Issue `3410 "
 "<https://github.com/tarantool/tarantool/issues/3410>`_."
 msgstr ""
 "(Сервер) допустимость :ref:`резервного копирования любой контрольной "
-"точки <admin-backups-backup_start>`, а не только последней. Проблема "
-"`3410 <https://github.com/tarantool/tarantool/issues/3410>`_."
+"точки <reference_lua-box_backup-backup_start>`, а не только последней. "
+"Проблема `3410 <https://github.com/tarantool/tarantool/issues/3410>`_."
 
 #: ../doc/whats_new.rst:418
 msgid ""
@@ -1396,7 +1433,7 @@ msgid ""
 "(Replication) log records which tried to commit twice. Issue `3105 "
 "<https://github.com/tarantool/tarantool/issues/3105>`_."
 msgstr ""
-"(Репликации) запись в журнал попытки повторного коммита. Проблема `3105 "
+"(Репликация) запись в журнал попытки повторного коммита. Проблема `3105 "
 "<https://github.com/tarantool/tarantool/issues/3105>`_."
 
 #: ../doc/whats_new.rst:447
@@ -3011,14 +3048,15 @@ msgstr ""
 "<https://github.com/tarantool/tarantool/issues/2410>`_."
 
 #: ../doc/whats_new.rst:965
+#, fuzzy
 msgid ""
 "(Memtx+Vinyl) implemented low-level Lua API to create consistent backups."
 " of Memtx + Vinyl data. The new feature provides "
 "``box.backup.start()/stop()`` functions to create backups of all spaces. "
-":ref:`box.backup.start() <admin-backups-backup_start>` pauses the "
-"Tarantool garbage collector and returns the list of files to copy. These "
-"files then can be copied be any third-party tool, like cp, ln, tar, "
-"rsync, etc. ``box.backup.stop()`` lets the garbage collector continue. "
+":ref:`box.backup.start() <reference_lua-box_backup-backup_start>` pauses "
+"the Tarantool garbage collector and returns the list of files to copy. "
+"These files then can be copied be any third-party tool, like cp, ln, tar,"
+" rsync, etc. ``box.backup.stop()`` lets the garbage collector continue. "
 "Created backups can be restored instantly by copying into a new directory"
 " and starting a new Tarantool instance. No special preparation, "
 "conversion or unpacking is needed. Issue `1916 "
@@ -3028,13 +3066,13 @@ msgstr ""
 "согласованных резервных копий данных Memtx + Vinyl. Новая "
 "функциональность обеспечивает создание резервных копий всех спейсов с "
 "помощью функций ``box.backup.start()/stop()``. :ref:`box.backup.start() "
-"<admin-backups-backup_start>` останавливает работу сборщика мусора "
-"Tarantool'а и возвращает список файлов для копирования. Затем эти файлы "
-"можно скопировать с помощью любого стороннего средства, например, cp, ln,"
-" tar, rsync и т.д. ``box.backup.stop()`` возобновляет работу сборщика "
-"мусора. Чтобы немедленно восстановить данные, скопируйте созданные "
-"резервные копии в новую директорию, а затем запустите новый экземпляр "
-"Tarantool'а. Нет необходимости в дополнительной подготовке, "
+"<reference_lua-box_backup-backup_start>` останавливает работу сборщика "
+"мусора Tarantool'а и возвращает список файлов для копирования. Затем эти "
+"файлы можно скопировать с помощью любого стороннего средства, например, "
+"cp, ln, tar, rsync и т.д. ``box.backup.stop()`` возобновляет работу "
+"сборщика мусора. Чтобы немедленно восстановить данные, скопируйте "
+"созданные резервные копии в новую директорию, а затем запустите новый "
+"экземпляр Tarantool'а. Нет необходимости в дополнительной подготовке, "
 "преобразовании или распаковывании. Проблема `1916 "
 "<https://github.com/tarantool/tarantool/issues/1916>`_."
 
